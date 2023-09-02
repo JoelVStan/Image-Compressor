@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .wrapper {
+        @apply bg-white p-8 rounded-xl transition delay-200 ease-in-out w-[450px] h-[352px]
+    }
+
+    .wrapper.active {
+        @apply h-[580px]
+    }
+
+    .wrapper .upload-box {
+        @apply h-72 flex items-center justify-center flex-col border-2 border-dashed border-gray-300 rounded-md cursor-pointer
+    }
+
+    .wrapper.active .upload-box {
+        @apply border-none
+    }
+
+    .wrapper.active .upload-box p {
+        @apply hidden
+    }
+
+    .wrapper.active .upload-box img {
+        @apply w-full h-full object-cover rounded
+    }
+
+    .wrapper .content {
+        @apply mt-7 font-medium opacity-0 pointer-events-none
+    }
+
+    .wrapper.active .content {
+        @apply opacity-100 pointer-events-auto transition ease-in duration-150 delay-100
+    }
+
+    .content .row {
+        @apply flex justify-between
+    }
+
+    .content .row .column {
+        @apply w-[calc(100%/2-15px)]
+    }
+
+    .row .column label {
+        @apply text-[1rem]
+    }
+
+    .size .column input {
+        @apply w-full h-[49px] outline-none border border-solid border-[#aaa] rounded py-0 px-[15px] text-[1rem] mt-2 focus:border-2 focus:border-cyan-400
+    }
+
+    .content .checkboxes {
+        @apply mt-5
+    }
+
+    .checkboxes .column {
+        @apply flex items-center
+    }
+
+    .checkboxes .column input {
+        @apply w-4 h-4 mr-2 accent-cyan-600 cursor-pointer
+    }
+
+    .content .download-btn {
+        @apply w-full py-3 px-5 mt-7 mx-0 outline-none border-none text-[1.125rem] text-white font-semibold bg-cyan-400 rounded tracking-wider uppercase hover:bg-cyan-500
+    }
+}
