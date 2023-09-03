@@ -23,6 +23,11 @@ A useful image compressor application for your daily needs.
 - HTML
 - Tailwind CSS
 - JavaScript
+
+## Remember ❗
+
+The application is currently suitable to use only in desktop. Better don't use it in your mobile devices.
+
 ## Screenshots
 
 ![Screenshot (33)](https://github.com/JoelVStan/Image-Compressor/assets/101164781/4c050f44-6002-4477-b938-b5cb353e750f)
